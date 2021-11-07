@@ -252,6 +252,8 @@ grid.arrange(clust4, ncol=1)
 #plot the k-means cluster (5m)
 grid.arrange(clust5, clust6, ncol=2)
 
+#UNUSED SCRIPT
+
 #wssplot1 <- function(data, nc=15, seed=123)
 #{
   #wss <- (nrow(data)-1)*sum(apply(data,2,var))
@@ -311,13 +313,13 @@ grid.arrange(clust5, clust6, ncol=2)
 #fviz_cluster(final, data = table)
 
 #Naive Bayes
-library(caret)
-library(e1071)
+#library(caret)
+#library(e1071)
 
-sampel <- sample(1:nrow(Test.Api1.300),0.8*nrow(Test.Api1.300),replace=TRUE)
-sampelplus <- data.frame(Test.Api1.300)[sampel,]
-sampelminus <- data.frame(Test.Api1.300)[-sampel,]
-NB <- naiveBayes(Distance~.,data=sampelplus)
-prediksi <- predict(NB, sampelminus)
-hasil <- confusionMatrix(table(prediksi,sampelminus$Distance))
-hasil
+#sampel <- sample(1:nrow(Test.Api1.300),0.8*nrow(Test.Api1.300),replace=TRUE)
+#sampelplus <- data.frame(Test.Api1.300)[sampel,]
+#sampelminus <- data.frame(Test.Api1.300)[-sampel,]
+#NB <- naiveBayes(Distance~.,data=sampelplus)
+#prediksi <- predict(NB, sampelminus)
+#hasil <- confusionMatrix(table(prediksi,sampelminus$Distance))
+#hasil
