@@ -35,27 +35,6 @@ Test.Api5.300 <- read_excel("5-300.xlsx")
 Test.Api5.600 <- read_excel("5-600.xlsx")
 
 
-#Data tidak digunakan
-#Test.Api2.300 <- read_excel("2-300.xlsx")
-#Test.Api2.600 <- read_excel("2-600.xlsx")
-#Test.Api2.1200 <- read_excel("2-1200.xlsx")
-#Test.Api3.300 <- read_excel("3-300.xlsx")
-#Test.Api3.600 <- read_excel("3-600.xlsx")
-#Test.Api4.300 <- read_excel("4-300.xlsx")
-#Test.Api4.600 <- read_excel("4-600.xlsx")
-#Test.Api4.1200 <- read_excel("4-1200.xlsx")
-#Test.Api5.1200 <- read_excel("5-1200.xlsx")
-
-#unused data sumstat syntax
-#summary(Test.Api2.300)
-#summary(Test.Api2.600)
-#summary(Test.Api2.1200)
-#summary(Test.Api5.1200)
-#summary(Test.Api4.300)
-#summary(Test.Api4.600)
-#summary(Test.Api4.1200)
-#summary(Test.Api3.600)
-
 #Summary statistics
 summary(Test.Api1.300)
 summary(Test.Api1.600)
@@ -252,7 +231,30 @@ grid.arrange(clust4, ncol=1)
 #plot the k-means cluster (5m)
 grid.arrange(clust5, clust6, ncol=2)
 
-#UNUSED SCRIPT
+#UNUSED SCRIPT AND DATA
+
+
+#Data tidak digunakan
+#Test.Api2.300 <- read_excel("2-300.xlsx")
+#Test.Api2.600 <- read_excel("2-600.xlsx")
+#Test.Api2.1200 <- read_excel("2-1200.xlsx")
+#Test.Api3.300 <- read_excel("3-300.xlsx")
+#Test.Api3.600 <- read_excel("3-600.xlsx")
+#Test.Api4.300 <- read_excel("4-300.xlsx")
+#Test.Api4.600 <- read_excel("4-600.xlsx")
+#Test.Api4.1200 <- read_excel("4-1200.xlsx")
+#Test.Api5.1200 <- read_excel("5-1200.xlsx")
+
+#unused data sumstat syntax
+#summary(Test.Api2.300)
+#summary(Test.Api2.600)
+#summary(Test.Api2.1200)
+#summary(Test.Api5.1200)
+#summary(Test.Api4.300)
+#summary(Test.Api4.600)
+#summary(Test.Api4.1200)
+#summary(Test.Api3.600)
+
 
 #wssplot1 <- function(data, nc=15, seed=123)
 #{
